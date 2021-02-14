@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+
+</head>
+<body>
+  <div class="container">
+
+      <div class="container1">
+      <nav>
+        <input type="checkbox" id="check1">
+        <label for="check1">
+            <i class="fas fa-bars" id="menu"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <span style="color: rgb(250, 248, 248)">Contact Manager</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="container2">
+     <div class="box1">
+        <form class="sign-in-form">
+            <div class="form-group">
+                <label for="uname"><b>Name</b></label>
+                <input type="text" class="form-control" placeholder="Name" name="uname" required>
+            </div>
+            <div class="form-group">
+                <label for="gender"><b>Gender</b></label>
+                <select class="form-group" required>
+                    <optgroup label="Select Gender">
+                        <option >Male</option>
+                        <option >Female</option>
+                        <option >Others</option>
+                    </optgroup>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input type="email" class="form-control" placeholder="Email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneno"><b>Phone number</b></label>
+                <input type="tel" class="form-control" placeholder="Phone Number" name="phoneno" required>
+            </div>
+            <input type="submit" class="submitbtn" value="Add to Contacts">
+            
+        </form>
+     </div>
+     <div class="box2">
+         <h1>Contacts(Card View)</h1>
+         <h4>Hover the mouse on card to see details</h4>
+         <div class="imagecontainer">
+      <div class="imagecontainer1">
+
+          <div class="card1">
+              <div class="front1">
+                <img id="avatar" src="./images/avatar1.png" alt="">
+                <span style="position: absolute; background-color: black; color: white; margin-top: 80%;">Peter Parker</span>
+              </div>
+           <div class="back1">
+            <span style="position: absolute; background-color: black; color: white;">Peter Parker</span>
+            <span style="position: absolute; background-color: black; color: white; margin-top: 50%;">peter@gmail.com</span>
+            <span style="position: absolute; background-color: black; color: white; margin-top: 80%;">547-367-205</span>
+           </div>
+          </div>
+        </div>
+
+        <div class="imagecontainer2">
+
+        
+          <div class="card2">
+            <!-- <div class="front2">
+                <img id="avatar" src="./images/avatar2.png" alt="">
+                <span>James Cameron</span>
+              </div>
+           <div class="back2">
+            <span>James Cameronr</span>
+            <span>james@gmail.com</span>
+            <span>267-347-345</span>
+          </div> -->
+        </div>
+
+    </div>
+
+    <div class="imagecontainer3">
+   
+          <div class="card3">
+            <!-- <div class="front3">
+                <img id="avatar" src="./images/avatar3.png" alt="">
+                <span>Maria Hill</span>
+              </div>
+           <div class="back3">
+            <span>Maria Hill</span>
+            <span>maria@gmail.com</span>
+            <span>127-567-205</span>
+          </div> -->
+        </div>
+
+    </div>
+
+    <div class="imagecontainer4">
+
+   
+          <div class="card4">
+            <!-- <div class="front4">
+                <img id="avatar" src="./images/avatar4.png" alt="">
+                <span>John Parry</span>
+              </div>
+           <div class="back">
+            <span>John Pary</span>
+            <span>john@gmail.com</span>
+            <span>542-358-125</span>
+          </div> -->
+          </div>
+      
+        </div>
+    </div>
+     </div>
+
+   <div class="Box5">
+    <h1>Contacts(Table View)</h1>
+    <!-- <div class="Box5container">
+         <img id="avatar1" src="./images/avatar1.png" alt="">
+          <img id="avatar1" src="./images/avatar2.png" alt="">
+          <img id="avatar1" src="./images/avatar3.png" alt="">
+          <img id="avatar1" src="./images/avatar4.jpg" alt="">
+
+    </div> -->
+   </div>
+
+    </div>
+
+      <footer>
+        <p>Copyright Contact Manager &copy;2020</p>
+        <div class="footercontent">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, corrupti placeat! Cupiditate ipsa illo reiciendis facere rem officia facilis odit non eos! Veniam vero ab quis libero et quibusdam eveniet.
+             Similique ut quis pariatur quo quidem atque laboriosam, eum tempore quam praesentium, inventore quasi libero hic expedita nostrum autem commodi. Magni sit minima explicabo expedita incidunt eligendi eos dignissimos odit?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit numquam assumenda nobis ipsa, similique magnam natus sunt tempore voluptatibus ea? Iste deserunt impedit placeat aut blanditiis voluptate consectetur vero adipisci!
+             Ipsa repellendus cumque, eius quis qui tempora iure dolorem. Quae voluptatum repudiandae libero consequuntur molestiae sint quis tenetur quaerat modi dolorem. Eligendi, praesentium aspernatur! Aliquam necessitatibus quaerat nobis quasi voluptates!</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aspernatur ex repellendus optio nesciunt esse quaerat. Non inventore ullam deserunt illo alias. Cupiditate eligendi magni doloremque voluptas unde. Cupiditate, eos.
+             Aliquam enim officiis numquam sed quibusdam quas voluptates tempore consequatur non consequuntur quos voluptatibus dolorem maiores, fuga nam nobis natus placeat quod! Eligendi nisi assumenda quaerat repellat placeat aut optio.</p>
+        </div>
+      </footer>
+
+
+  </div>
+</body>
+</html>
