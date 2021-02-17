@@ -6,21 +6,17 @@
     box-sizing: border-box;
 }
 .container{
-    width: 1200px;
-    height: 800px;
+   
+    width: 100%;
+    height: 100%;
     border: 1px solid blue;
 }
 .container1{
     background-color: blue;
 }
-/* .container1 nav{
-    width: 1200px;
-    height: 50px;
-    border: 1px solid blue;
-    color: white;
-} */
+
 nav {
-    background-color: blue;
+    background-color: rgb(53, 53, 236);
     height: 60px;
 }
 
@@ -30,6 +26,7 @@ nav span {
     font-family: 'Poppins';
     margin-left: 5px;
     line-height: 55px;
+    float: left;
 }
 
 nav ul {
@@ -57,7 +54,7 @@ nav ul li a:hover {
 nav label i {
     color: black;
     font-size: 22pt;
-    float: left;
+    /* float: left; */
     margin: 15px 20px;
     cursor: pointer;
 }
@@ -71,16 +68,16 @@ nav label {
     visibility: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .container{
         width: 500px;
         height: 800px;
         border: 1px solid blue;
     }
     nav ul {
-        width: 60%;
-        height: 40vh;
-        background-color: black;
+        width: 50%;
+        height: 30vh;
+        background-color: grey;
         text-align: center;
         margin: 0;
         position: fixed;
@@ -146,8 +143,8 @@ nav label {
     /* border: 1px solid red; */
 }
 footer{
-    width: 1200px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     background-color: black;
     color: white;
     text-align: center;
@@ -155,13 +152,13 @@ footer{
 }
 
 .box1{
-    width: 400px ;
-    height: 350px;
+    width: 350px ;
+    height: 300px;
     border: 1px solid rgba(165, 156, 156, 0.048) ;
     background-color: rgba(165, 156, 156, 0.048);
     margin-left: 50px;
     margin-top: 25px;
-    border-radius: 10%;
+    border-radius: 2%;
 }
 sign-in-form{
 width: 100%;
@@ -184,9 +181,7 @@ flex-direction: column;
     
 }
 .form-control{
-    /* background: none; */
-    /* border: none; */
-    /* border-bottom: 1px solid black; */
+    
     outline: none;
     margin-left: 40px;  
 }
@@ -223,11 +218,14 @@ flex-direction: column;
 .box2 h4{
     margin-left: 10%;
 }
- /* .imagecontainer{
-     width: 400px;
-     height: 100px;
-     border: 1px solid red;
- } */
+ .imagecontainer{
+     width: 100%;
+     height: 100%;
+     
+     display: flex;
+     flex-direction: row;
+     
+ }
 .imagecontainer1{
     position: relative;
     width: 120px;
@@ -260,23 +258,181 @@ flex-direction: column;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: blue;
+    background: rgb(31, 31, 243);
     color: red;
     transform: rotateY(180deg);
 }
 .card1:hover{
     transform: rotateY(180deg);
 }
-.Box5{
-    /* display: flex;
-    flex-direction: column;
-    width: 1200px;
-    height: 100px;
-    border: 1px solid red; */
+.back1 span{ 
+    color: white;
+}
+
+/* --------------------------------- */
+.imagecontainer2{
+    position: relative;
+    width: 120px;
+   height: 120px;
    
+}
+.card2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+    
+}
+.front2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    color: red;
+}
+#avatar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.back2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(31, 31, 243);
+    color: red;
+    transform: rotateY(180deg);
+}
+.back2 span{
+     color: white;
+}
+.card2:hover{
+    transform: rotateY(180deg);
+}
+/* ------------------------------card3 */
+
+.imagecontainer3{
+    position: relative;
+    width: 120px;
+   height: 120px;
+   
+}
+.card3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+    
+}
+.front3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    color: red;
+}
+#avatar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.back3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(53, 53, 218);
+    color: red;
+    transform: rotateY(180deg);
+}
+.back3 span{
+     color: white;
+}
+.card3:hover{
+    transform: rotateY(180deg);}
+/* -----------------------------------card4 */
+
+.imagecontainer4{
+    position: relative;
+    width: 120px;
+   height: 120px;
+   
+}
+.card4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+    
+}
+.front4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    color: red;
+}
+#avatar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.back4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(53, 53, 218);
+    color: red;
+    transform: rotateY(180deg);
+}
+.back4 span{
+     color: white;
+}
+.card4:hover{
+    transform: rotateY(180deg);}
+
+.Box5{
+    
+    margin-top: -150px;
+    margin-left: 5px;
+  height: 20px;
+
 }
 
 .footercontent{
 display: grid;
 grid-template-columns: auto auto auto;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 200%;
+    height: 50%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color:#f5f5f5;}
+  .tr:hover{
+    background-color: gray;
+}
+div tr td img{
+    width:30px;height:30px;
+    border-radius: 50%;
+}
+tr{
+    height:10px;
 }
